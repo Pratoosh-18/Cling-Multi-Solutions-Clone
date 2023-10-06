@@ -103,7 +103,13 @@
 
 
 
-/*                                               header */
+/*                                             header */
+
+.allheader {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
 
 .top-bar {
     width: 100%;
