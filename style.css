@@ -696,6 +696,12 @@ footer {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .top-bar {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .clients-logos a img {
         height: 25px;
