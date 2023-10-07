@@ -696,15 +696,9 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1500px) {
-    .clients-logos a img {
-        height: 35px;
-    }
-}
-
 @media only screen and (max-width: 1400px) {
     .clients-logos a img {
-        height: 33px;
+        height: 34px;
     }
 }
 
