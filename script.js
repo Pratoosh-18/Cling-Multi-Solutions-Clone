@@ -5,6 +5,9 @@ const footer = document.querySelector("#footer")
 const contact = document.querySelector("#contact")
 const workCard = document.querySelector("#workCard")
 const allheader = document.querySelector("#allheader")
+const serviceCardtext = document.querySelectorAll(".services-stats-card-text")
+const listItem = document.querySelectorAll(".list-item")
+const serviceCard = document.querySelectorAll(".services-stats-card")
 
 console.log(menu)
 Array.from(menu).forEach((item) => {
@@ -49,14 +52,15 @@ mode.addEventListener("click", () => {
         contact.style.backgroundColor = "white"
         workCard.style.color = "black"
         allheader.style.backgroundColor = "#272727"
-        a.style.color = "white";
-        b.style.color = "white";
-        c.style.color = "white";
-        d.style.color = "white";
-        e.style.color = "white";
-        f.style.color = "white";
-        g.style.color = "white";
-        h.style.color = "white";
+        for(let i=0;i<8;i++){
+            listItem[i].style.color="white"
+        }
+        for(let i=0;i<10;i++){
+            serviceCardtext[i].style.color="white"
+        }
+        for(let i=0;i<10;i++){
+            serviceCard[i].style.boxShadow="0 4px 8px 0 rgb(255, 255, 255, 0.2), 0 6px 20px 0 rgb(255, 255, 255, 0.19)"
+        }
 
     } else {
         document.body.style.backgroundColor = "white"
@@ -64,13 +68,14 @@ mode.addEventListener("click", () => {
         banner.style.backgroundColor = "#f2f5f8"
         footer.style.backgroundColor = "#f2f5f8"
         allheader.style.backgroundColor = "white"
-        a.style.color = "#555555";
-        b.style.color = "#555555";
-        c.style.color = "#555555";
-        d.style.color = "#555555";
-        e.style.color = "#555555";
-        f.style.color = "#555555";
-        g.style.color = "#555555";
-        h.style.color = "#555555";
+        for(let i=0;i<8;i++){
+            listItem[i].style.color="#555555"
+        }
+        for(let i=0;i<10;i++){
+            serviceCardtext[i].style.color="#444444"
+        }
+        for(let i=0;i<10;i++){
+            serviceCard[i].style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+        }
     }
 })
