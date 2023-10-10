@@ -222,6 +222,10 @@ nav .logo {
     transition: 0.5s;
 }
 
+.banner-text-text{
+    font-size: 60px;
+}
+
 .blue-button {
     background-color: #0c2e8a;
     border: 2px solid #0c2e8a;
