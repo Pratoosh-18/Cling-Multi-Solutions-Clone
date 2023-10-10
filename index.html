@@ -8,6 +8,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Cling Multi Solutions - Clone by Pratoosh garg</title>
 </head>
 
@@ -43,33 +45,47 @@
             </div>
             <div class="line"></div>
 
-            <nav id="navigation" class="navigation">
-                <div class="logo" id="logo">
-                    <img src="logo.png" alt="Logo" height="65px">
 
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+                <div class="container-fluid">
+                    <a href="#">
+                        <div id="logostyle">
+                            <img src="logo.png" height="50px">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu">
+                            <li class="color-change list-item">Home</li>
+                            <li class="color-change list-item">About us</li>
+                            <li class="color-change list-item">Services</li>
+                            <li class="color-change list-item">Clients</li>
+                            <li class="color-change list-item">Portfolio</li>
+                            <li class="color-change list-item">Achievements</li>
+                            <li class="color-change list-item">Team</li>
+                            <li class="color-change list-item">
+                                <a id="blogs" href="https://blogs.clingmultisolutions.org/" target="next">Blogs</a>
+                            </li>
+                            <li>
+                                <button class="mode-button" id="mode">
+                                    Dark Mode
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li class="color-change list-item" id="1">Home</li>
-                    <li class="color-change list-item" id="2">About us</li>
-                    <li class="color-change list-item" id="3">Services</li>
-                    <li class="color-change list-item" id="4">Clients</li>
-                    <li class="color-change list-item" id="5">Portfolio</li>
-                    <li class="color-change list-item" id="6">Achievements</li>
-                    <li class="color-change list-item" id="7">Team</li>
-                    <li class="color-change list-item" id="8">
-                        <a href="https://blogs.clingmultisolutions.org/" target="next">Blogs</a>
-                    </li>
-                    <li>
-                        <button class="mode-button" id="mode">
-                            Switch Mode
-                        </button>
-                    </li>
-                </ul>
             </nav>
+
         </div>
     </header>
 
-    <div class="container">
+    <div class="container1">
+
+
 
         <div class="banner" id="banner">
             <div class="banner-text">
@@ -81,8 +97,8 @@
                 </div>
             </div>
             <div class="banner-buttons">
-                <button class="blue-button">Get started</button>
-                <button class="green-button">Our projects</button>
+                <button class="blue-button" id="getstarted">Get started</button>
+                <button class="green-button" id="ourprojects">Our projects</button>
             </div>
         </div>
     </div>
@@ -471,7 +487,8 @@
 
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team1.png" height="180px">
+                    <a href="https://www.linkedin.com/in/ramesh-singh-5873b21a3/" target="mainteam1"> <img
+                            src="team1.png" height="180px"> </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -484,7 +501,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team2.png" height="180px">
+                    <a href="https://www.linkedin.com/in/ashi-rastogi-902b986a/" target="mainteam2"><img src="team2.png"
+                            height="180px"></a>
+
+
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -497,7 +517,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team3.png" height="180px">
+                    <a href="https://www.linkedin.com/in/harsh-g-2482a2184/" target="mainteam3">
+
+                        <img src="team3.png" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -510,7 +533,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team4.png" height="180px">
+                    <a href="https://www.linkedin.com/in/-rajnishmishra/" target="mainteam4">
+
+                        <img src="team4.png" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -523,7 +549,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team5.png" height="180px">
+                    <a href="https://www.linkedin.com/in/shantanukhoraskar/" target="mainteam5">
+
+                        <img src="team5.png" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -536,7 +565,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team6.png" height="180px">
+                    <a href="https://www.linkedin.com/in/harsh-chauhan-b822b5247/" target="mainteam6">
+
+                        <img src="team6.png" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -549,7 +581,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team7.jpg" height="180px">
+                    <a href="https://www.linkedin.com/in/harsh-chauhan-b822b5247/" target="mainteam7">
+
+                        <img src="team7.jpg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -575,7 +610,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team9.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/deeksha-arya-99a3811ba/" target="mainteam9">
+
+                        <img src="team9.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -588,7 +626,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team10.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/md-forhad-mia/" target="mainteam10">
+
+                        <img src="team10.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -601,7 +642,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team11.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/gaurav-sharma-9b31041b8/" target="mainteam11">
+                        <img src="team11.jpeg" height="180px">
+
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -614,7 +658,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team12.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/manopriya-dhamodaran-886805222/" target="mainteam12">
+
+                        <img src="team12.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -627,7 +674,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team13.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/abdul-kader-jilani-3b8b3a1b9/" target="mainteam13">
+
+                        <img src="team13.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -640,7 +690,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team14.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/monirujjaman-monir-b1108a204/" target="mainteam14">
+
+                        <img src="team14.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -653,7 +706,10 @@
             </div>
             <div class="team-card">
                 <div class="team-card-image">
-                    <img src="team15.jpeg" height="180px">
+                    <a href="https://www.linkedin.com/in/tanmaydeep-singh/" target="mainteam15">
+
+                        <img src="team15.jpeg" height="180px">
+                    </a>
                 </div>
                 <div class="team-card-text">
                     <div class="team-card-text-heading text-blue">
@@ -678,7 +734,9 @@
 
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support1.png" height="200px">
+                    <a href="https://www.linkedin.com/in/happyhimanshu/" target="supporter1">
+                        <img src="support1.png" height="200px">
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
@@ -704,7 +762,10 @@
             </div>
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support3.png" height="200px">
+                    <a href="https://www.linkedin.com/in/akshay-gupta-b124118a/" target="supporter2">
+
+                        <img src="support3.png" height="200px">
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
@@ -717,7 +778,10 @@
             </div>
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support4.jpeg" height="200px">
+                    <a href="https://www.linkedin.com/in/vibhu-rastogi/" target="supporter3">
+
+                        <img src="support4.jpeg" height="200px">
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
@@ -730,7 +794,10 @@
             </div>
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support5.png" height="200px">
+                    <a href="https://www.linkedin.com/in/mohan-patil-642230b7/" target="supporter4">
+
+                        <img src="support5.png" height="200px">
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
@@ -743,7 +810,10 @@
             </div>
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support6.png" height="200px">
+                    <a href="https://www.linkedin.com/in/sagar-jaiswal-48043ba5/" target="supporter5">
+
+                        <img src="support6.png" height="200px">
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
@@ -756,7 +826,10 @@
             </div>
             <div class="support-card">
                 <div class="support-card-image">
-                    <img src="support7.jpeg" height="200px">
+                    <a href="https://www.linkedin.com/in/shraddha-pratapwar-ab2477b6/" target="supporter6">
+                        <img src="support7.jpeg" height="200px">
+
+                    </a>
                 </div>
                 <div class="support-card-text">
                     <div class="support-card-text-heading">
