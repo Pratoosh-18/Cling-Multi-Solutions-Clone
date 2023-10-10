@@ -15,6 +15,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    padding-top: 10px;
 }
 
 .headings-underline {
@@ -117,16 +118,11 @@
     border-bottom: 1px solid rgb(212, 212, 212);
 }
 
-@media only screen and (max-width: 800px) {
-    .top-bar {
-        display: none;
-    }
-}
-
 .items1 {
     display: flex;
-    height: 7vh;
+    height: 4vh;
     align-items: center;
+    padding-top: 15px;
 }
 
 
@@ -178,26 +174,28 @@ nav .logo {
 }
 
 .mode-button {
-    height: 25px;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    background-color: gray;
-    font-size: 0.8rem;
+    height: 30px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    color: white;
     font-weight: 600;
+    transform: translateX(-2vw);
 }
 
 
 /*                                      main body */
 
-.container {
+.container1 {
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container .banner {
+.container1 .banner {
     height: 60vh;
     width: 100vw;
     display: flex;
@@ -207,14 +205,14 @@ nav .logo {
     background-color: #f2f5f8;
 }
 
-.container .banner .banner-text {
+.container1 .banner .banner-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
 }
 
-.container .banner .banner-buttons button {
+.container1 .banner .banner-buttons button {
     height: 45px;
     width: 160px;
     margin: 30px 10px 0 10px;
@@ -355,7 +353,7 @@ nav .logo {
     padding: 30px;
 }
 
-.services-stats-card-text{
+.services-stats-card-text {
     color: #444444;
 }
 
@@ -466,6 +464,7 @@ nav .logo {
     align-items: center;
     padding: 0 9px;
     overflow: hidden;
+    margin: 0 5px;
 }
 
 .team-card-text {
@@ -503,6 +502,7 @@ nav .logo {
     background-color: #50d8af;
     border-radius: 5px;
 }
+
 
 .support-card-text-heading {
     /* color: white; */
@@ -620,6 +620,11 @@ footer {
     flex-direction: column;
 }
 
+footer div p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
 @media only screen and (max-width: 1000px) {
     .mode-button {
         height: 20px;
@@ -650,17 +655,29 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    .nav-menu {
-        display: flex;
-        position: absolute;
-        right: 0;
-        flex-direction: column;
+    .support-card {
+        margin: 5px 8px;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    nav {
-        height: 50vh;
+@media only screen and (max-width: 996px) {
+    .support-card {
+        margin: 7px 2px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .support-card {
+        height: 300px;
+        width: 200px;
+        margin: 5px 2px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-bar {
+        display: none;
     }
 }
 
